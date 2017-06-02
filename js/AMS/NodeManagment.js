@@ -176,11 +176,13 @@ function AMS_poolmanagement_iplist() {
         var ip_info_devices = parsed_ip.data.Status.Devices;
         var ip_info_miner_type = parsed_ip.data.Status.Modules;
         var sum_mm = 0;
+        var checkbox_value = 0;
         var sum_ghs = ip_info_runtime.MHSav / 1000
         for (var status in ip_info_devices){
             var status_mm = ip_info_devices[status];
             sum_mm+=status_mm.MMCount;
     }
+        
    
         nm_table.append('<tr><td><input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" /> <label for="filled-in-box" >' + thisnode.ip + '</label></td><td>' + ip_info_runtime.Elapsed + '</td><td>'+ ip_info_pool[0].URL + 
             '</td><td>' + ip_info_pool[0].User + '</td><td>' + sum_mm + '</td><td>' + ip_info_miner_type[0].Ver.slice(0,3) +   

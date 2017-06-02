@@ -42,7 +42,7 @@ AMS.UIRenderer.Recipes.SideBar = function () {
     AddEntry("概览", '&#xE88A;', '?');
     AddSubHeader("管理");
     AddEntry("控制器管理", '&#xE875;', '?');
-    AddEntry("矿池管理", '&#xE80B;', '#');
+    AddEntry("矿池管理", '&#xE80B;', '#ams-poolmanage-window');
     AddEntry("Super RTAC", '&#xE869;', '#', 'TODOOOOOOOOOO',
         {position:"right",delay:"50",tooltip:"我可以做很多事情哦 (´・ω・`) 比如说用来给机器批量升级"});
     AddSubHeader("系统");

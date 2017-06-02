@@ -306,58 +306,6 @@
     </div>
 </div>
 
-<div id="ams-poolmanage-window" class="modal modal-fixed-footer">
-    <div class="modal-content">
-        <a href="#" onclick="" class="modal-action modal-close"><i class="material-icons right black-text">&#xE14C;</i></a>
-        <a href="#" onclick="AMS_poolmanagement_iplist()" class="modal-action"><i class="material-icons right black-text">刷新</i></a>
-        <h4>矿池管理</h4>
-        <div class="row">
-            <form class="col s12">
-
-                <div class="row">
-                    <table class="highlight">
-                    <thead>
-                    <tr>
-                        <th><input type="button" name="order_ip_list" value="排序" class="waves-effect waves-green"></th>
-                        <th><input type="button" name="order_run_time" value="排序" class="waves-effect waves-green"></th>
-                        <th><input type="button" name="order_pool" value="排序" class="waves-effect waves-green"></th>
-                        <th><input type="button" name="order_worker" value="排序" class="waves-effect waves-green"></th>
-                        <th><input type="button" name="order_miner_number" value="排序" class="waves-effect waves-green"></th>
-                        <th><input type="button" name="order_miner_type" value="排序" class="waves-effect waves-green"></th>
-                        <th><input type="button" name="order_GHS" value="排序" class="waves-effect waves-green"></th>
-                        <th><input type="button" name="order_GHSavg" value="排序" class="waves-effect waves-green"></th>
-                    </tr>
-                    <tr>
-                        <th data-field="ams-mainpage-badmachines-table-th-ip_list">Target</th>
-                        <th data-field="ams-mainpage-badmachines-table-th-run_time">运行时间</th>
-                        <th data-field="ams-mainpage-badmachines-table-th-pool">矿池</th>
-                        <th data-field="ams-mainpage-badmachines-table-th-worker">矿工</th>
-                        <th data-field="ams-mainpage-badmachines-table-th-miner_number">机器数量</th>
-                        <th data-field="ams-mainpage-badmachines-table-th-miner_type">机器种类</th>
-                        <th data-field="ams-mainpage-badmachines-table-th-GHS">实际算力</th>
-                        <th data-field="ams-mainpage-badmachines-table-th-GHSavg">平均算力</th>
-                    </tr>
-                    </thead>
-                    <tbody id="ams-mainpage-badmachines-table-tbody">
-                    <!--<tr>-->
-                    <!--<td>192.168.1.233:4028</td>-->
-                    <!--<td>0</td>-->
-                    <!--<td>1</td>-->
-                    <!--<td>喵喵喵</td>-->
-                    <!--</tr>-->
-                    </tbody>
-                </table>
-                </div>
-            </form>
-        </div>
-    </div>
-    <div class="modal-footer">
-        <h6 class="waves-effect waves-red">所选IP的机器总数量为：</h6>
-        <a href="#" class="modal-close waves-effect waves-red btn-flat">取消</a>
-        <a href="#ams-poolmodified-window" class="waves-effect waves-green btn-flat">更改</a>
-    </div>
-</div>
-
 <div id="ams-mainpage-nodedetail-r" class="row">
     <div id="ams-mainpage-nodedetail" class="col s12 m12 l12">
 
@@ -365,21 +313,17 @@
 </div>
 
 
-
-
 <!--Scripts-->
 <!--3rdparty libraries-->
 <script src="js/json2.js"></script>
-<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/jquery-2.1.1.min.js" ></script>
 <script src="js/jstorage.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/taffy.js"></script>
 <script src="js/Ace/ace.js"></script>
 <script src="js/Chart.js/2.4.0/Chart.min.js"></script>
 <script src="js/Chart.js/2.4.0/Chart.bundle.min.js"></script>
-
 <script src="js/sprintf.js"></script>
-
 <script src="js/Reimu.js/Reimu.js"></script>
 <script src="js/Reimu.js/Algorithm.js"></script>
 <script src="js/Reimu.js/Dom.js"></script>
@@ -391,7 +335,6 @@
 
 <!--init script-->
 <script src="js/init.js"></script>
-
 <script src="js/AMS/AMS.js"></script>
 
 <!--AMS libraries-->
@@ -399,7 +342,6 @@
 <script src="js/AMS/Themes/Themes.js"></script>
 <script src="js/AMS/API/API.js"></script>
 <script src="js/AMS/API/Request.js"></script>
-
 <script src="js/AMS/lib/temp2color.js"></script>
 <script src="js/AMS/lib/urlparams.js"></script>
 <script src="js/AMS/lib/time.js"></script>
@@ -423,8 +365,8 @@
 <script src="js/AMS/UIRenderer/Recipes/SideBar.js"></script>
 <script src="js/AMS/UIRenderer/Recipes/SuperRTACWindow.js"></script>
 <script src="js/AMS/UIRenderer/Recipes/ThemeSettingsWindow.js"></script>
-
-
+<script src="js/AMS/UIRenderer/Recipes/PoolMangeWindow.js"></script>
+<script src="js/AMS/sort.js"></script>
 <script src="js/AMS/NavBar.js"></script>
 <script src="js/AMS/User.js"></script>
 <script src="js/AMS/issues.js"></script>
@@ -437,6 +379,3 @@
 <script src="js/AMS/debug.js"></script>
 <script src="js/AMS/lib/req.js"></script>
 <script src="js/AMS/Version.js"></script>
-
-</body>
-</html>
