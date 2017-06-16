@@ -1,7 +1,6 @@
 /**
  * Created by root on 17-1-9.
  */
-
 AMS.NodeManagement = {
     Window: {
         OpenUI: function () {
@@ -182,10 +181,9 @@ function AMS_poolmanagement_iplist() {
             var status_mm = ip_info_devices[status];
             sum_mm+=status_mm.MMCount;
     }
-        
-   
-        nm_table.append('<tr><td><input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" /> <label for="filled-in-box" >' + thisnode.ip + '</label></td><td>' + ip_info_runtime.Elapsed + '</td><td>'+ ip_info_pool[0].URL + 
-            '</td><td>' + ip_info_pool[0].User + '</td><td>' + sum_mm + '</td><td>' + ip_info_miner_type[0].Ver.slice(0,3) +   
+          
+        nm_table.append('<tr><td><input type="checkbox" class="filled-in checkbox" name="chk" id="' + thisnode.ip + '"/> <label for="' + thisnode.ip + '"">' + thisnode.ip + '</label></td><td>' + ip_info_runtime.Elapsed + '</td><td>'+ ip_info_pool[0].URL + 
+            '</td><td>' + ip_info_pool[0].User + '</td><td class="number">' + sum_mm + '</td><td>' + ip_info_miner_type[0].Ver.slice(0,3) +   
             '</td><td>' + sum_ghs + '</td><td>' + (sum_ghs / 10) + 
             '</td></tr>');
     }
@@ -206,6 +204,5 @@ function AMS_poolmanagement_poolist() {
         nm_table.append('<tr><td>' + thisnode.URL +
             '</td></tr>');
     }
-
 
 }

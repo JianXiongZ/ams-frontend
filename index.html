@@ -7,9 +7,10 @@
 
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <!-- CSS  -->
-    <link href="css/materialicons.css" rel="stylesheet">
+    <link href="css/materialicons.css" rel="stylesheet"/>
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/ams.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    
 </head>
 <body onload="">
 
@@ -50,12 +51,6 @@
     <li><a href="#"><i class="material-icons left">&#xE8E1;</i>平均温度</a></li>
     <li><a href="#"><i class="material-icons left">&#xE80E;</i>最高温度</a></li>
 </ul>
-
-
-
-
-
-
 
 
 
@@ -134,11 +129,11 @@
 
                 <div class="row">
                     <div class="input-field col s9">
-                        <input id="ams-supertacnew-window-form-ipst" type="text" placeholder="例如：192.168.1.50" value="">
+                        <input id="ams-supertacnew-window-form-ipst" type="text" placeholder="例如：192.168.1.50" value=""/>
                         <label for="ams-supertacnew-window-form-ipst">IP地址（起始）</label>
                     </div>
                     <div class="input-field col s3">
-                        <input id="ams-supertacnew-window-form-iped" type="text" placeholder="例如：100" value="">
+                        <input id="ams-supertacnew-window-form-iped" type="text" placeholder="例如：100" value=""/>
                         <label for="ams-supertacnew-window-form-iped">IP地址结束</label>
                     </div>
                 </div>
@@ -312,7 +307,8 @@
     </div>
 </div>
 
-
+</body>
+</html>
 <!--Scripts-->
 <!--3rdparty libraries-->
 <script src="js/json2.js"></script>
@@ -351,6 +347,8 @@
 <script src="js/AMS/lib/string2file.js"></script>
 <script src="js/AMS/lib/export2csv.js"></script>
 <script src="js/AMS/lib/helper.js"></script>
+<script src="js/AMS/sort.js"></script>
+<script src="js/AMS/check.js"></script>
 
 
 <!--AMS components-->
@@ -366,7 +364,6 @@
 <script src="js/AMS/UIRenderer/Recipes/SuperRTACWindow.js"></script>
 <script src="js/AMS/UIRenderer/Recipes/ThemeSettingsWindow.js"></script>
 <script src="js/AMS/UIRenderer/Recipes/PoolMangeWindow.js"></script>
-<script src="js/AMS/sort.js"></script>
 <script src="js/AMS/NavBar.js"></script>
 <script src="js/AMS/User.js"></script>
 <script src="js/AMS/issues.js"></script>

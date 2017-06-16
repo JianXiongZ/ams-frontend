@@ -2936,6 +2936,7 @@ $(document).ready(function(){
         return;
       }
     });
+    
 
     // Textarea Auto Resize
     var hiddenDiv = $('.hiddendiv').first();
