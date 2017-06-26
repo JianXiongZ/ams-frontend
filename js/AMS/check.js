@@ -1,28 +1,26 @@
- $(document).ready(function(){
-    $("[type=checkbox]").click(function(){
-    
-        inputs=$("#tb1").find("input");
-            str=0; 
+ function click_checkbox(){
+      var  str = 0;
+      var inputs=$("#tb1").find("input");
             for(i=0;i<inputs.length;i++){   
                 if(inputs[i].type=="checkbox"){
                     if(inputs[i].checked&&inputs[i].name=="chk"){
-                        checkedRow=inputs[i];
-                        tr = checkedRow.parentNode.parentNode;
-                        tds = tr.cells;
+                      var  checkedRow=inputs[i];
+                       var tr = checkedRow.parentNode.parentNode;
+                       var tds = tr.cells;
                         //循环列              
-                        strr = parseInt(tds[3].innerHTML) ;
-                        str += strr 
-                        }                       
+                      var  strr = parseInt(tds[4].innerHTML) ;
+                        str += strr  ;
+                        }                        
                     }
                 }
          //alert(str);
-  $("order").value=str;
+  $("#miner_numbers").text(str);
    
-});
-});
+};
 
     function changeState(isChecked)
      {
+
        var chk_list=$("input");
        for(var i=0;i<chk_list.length;i++)
         {

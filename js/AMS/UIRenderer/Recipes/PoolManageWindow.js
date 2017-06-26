@@ -1,4 +1,4 @@
-AMS.UIRenderer.Recipes.PoolMangeWindow = function () {
+AMS.UIRenderer.Recipes.PoolManageWindow = function () {
     let ret = '<div id="ams-poolmanage-window" class="modal modal-fixed-footer">' +
     '<div class="modal-content">' +
         '<a href="#" onclick="" class="modal-action modal-close"><i class="material-icons right black-text">&#xE14C;</i></a>' +
@@ -8,7 +8,7 @@ AMS.UIRenderer.Recipes.PoolMangeWindow = function () {
         '<div class="row">' +
             '<form class="col s12">' + 
                 '<div class="row">' +  
-                    '<input type="checkbox" class="filled-in" name="select_all" id="test_checklist" onclick="changeState(this.checked)"/><label for="test_checklist" >全选</label>' +
+                    '<input type="checkbox" class="filled-in" name="select_all" id="test_checklist" onclick="changeState(this.checked);click_checkbox()"/><label for="test_checklist" >全选</label>' +
                     '<table id="tb1">' +
                     '<thead>' +
                     '<tr>' +
@@ -31,7 +31,7 @@ AMS.UIRenderer.Recipes.PoolMangeWindow = function () {
     '</div>' +
     '<div class="modal-footer">' +
      '<div class="input-field col s6">' +
-          '<input id="miner_number" type="text" value="" /><label for="miner_number">所选机器总数量为：</label>' +
+          '<span>所选机器总数量为：</span><span id="miner_numbers"></span>' +
         '</div>' +
         '<a href="#" class="modal-close waves-effect waves-red btn-flat">取消</a>' +
         '<a href="#ams-poolmodified-window" class="waves-effect waves-green btn-flat">更改</a>' +

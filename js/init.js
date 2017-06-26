@@ -179,5 +179,5 @@
             AMS_Map_Update();
         }
 
-    }); // end of document ready
+}); // end of document ready
 })(jQuery); // end of jQuery name space 喵喵喵

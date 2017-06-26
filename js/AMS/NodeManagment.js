@@ -182,7 +182,7 @@ function AMS_poolmanagement_iplist() {
             sum_mm+=status_mm.MMCount;
     }
           
-        nm_table.append('<tr><td><input type="checkbox" class="filled-in checkbox" name="chk" id="' + thisnode.ip + '"/> <label for="' + thisnode.ip + '"">' + thisnode.ip + '</label></td><td>' + ip_info_runtime.Elapsed + '</td><td>'+ ip_info_pool[0].URL + 
+        nm_table.append('<tr><td><input type="checkbox" class="filled-in" name="chk" onclick="click_checkbox()" id="' + thisnode.ip + '"/> <label for="' + thisnode.ip + '"">' + thisnode.ip + '</label></td><td>' + ip_info_runtime.Elapsed + '</td><td>'+ ip_info_pool[0].URL + 
             '</td><td>' + ip_info_pool[0].User + '</td><td class="number">' + sum_mm + '</td><td>' + ip_info_miner_type[0].Ver.slice(0,3) +   
             '</td><td>' + sum_ghs + '</td><td>' + (sum_ghs / 10) + 
             '</td></tr>');
